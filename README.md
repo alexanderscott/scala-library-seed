@@ -1,4 +1,4 @@
-# scala-project-seed
+# scala-library-seed
 Seed project for scala libraries
 
 
@@ -7,7 +7,7 @@ Seed project for scala libraries
 resolvers += "CrunchDevelopment Repositories" at "http://dl.bintray.com/crunchdevelopment/maven"
 
 libraryDependencies ++= Seq(
-  "com.crunchdevelopment.scala-project-seed" %% "scala-project-seed" % "0.1.0"
+  "com.crunchdevelopment.scala-library-seed" %% "scala-project-seed" % "0.1.0"
 )
 ```
 
