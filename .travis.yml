@@ -1,0 +1,13 @@
+language: scala
+script: "sbt clean coverage test"
+after_script:
+    - "sbt coveralls"
+scala:
+    - "2.11.8"
+jdk:
+    - oraclejdk8
+env:
+    - SBT_OPTS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
+branches:
+  only:
+    - master

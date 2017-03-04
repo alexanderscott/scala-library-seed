@@ -2,6 +2,12 @@ resolvers += "jgit-repo" at "http://download.eclipse.org/jgit/maven"
 
 resolvers += Classpaths.sbtPluginReleases
 
+addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.0.4")
+
+addSbtPlugin("org.scoverage" % "sbt-coveralls" % "1.0.0")
+
+addSbtPlugin("org.scalastyle" %% "scalastyle-sbt-plugin" % "0.7.0")
+
 // To publish API ScalaDoc as html
 addSbtPlugin("com.typesafe.sbt" % "sbt-site" % "1.2.0")
 
